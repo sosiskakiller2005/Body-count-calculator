@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Body_count_calculator.MainPage">
+
+    <StackLayout>
+        <Label Text="Калькулятор индекса массы тела" 
+             VerticalTextAlignment="Start" 
+            FontSize="Title" FontFamily="Arial" TextColor="#FFFFFF" 
+            Margin="0,60,0,0" />
+
+        <Entry x:Name="heightEn" Placeholder="Введите свой рост" Margin="0,50,0,0" FontSize="20" Keyboard="Numeric"/>
+        <Entry x:Name="weightEn" Placeholder="Введите свой вес" Margin="0,10,0,0" FontSize="20" Keyboard="Numeric"/>
+        <Button x:Name="okBtn" Clicked="OnButtonClicked" Text="Рассчитать" CornerRadius="10" BorderWidth="1" TextColor="#FFFFFF" FontSize="17" HorizontalOptions="Center" Margin="0,20,0,0"/>
+        <Label x:Name="imt" FontAttributes="Bold" Text="" HorizontalTextAlignment="Center" IsVisible="false" FontSize="20" Margin="0,10,0,0"/>
+
+
+    </StackLayout>
+
+</ContentPage>
