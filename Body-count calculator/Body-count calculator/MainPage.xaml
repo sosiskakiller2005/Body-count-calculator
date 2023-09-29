@@ -2,19 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
-             x:Class="Body_count_calculator.MainPage">
+             x:Class="Body_count_calculator.MainPage" BackgroundColor="#373E40" >
 
-    <StackLayout>
+    <StackLayout BackgroundColor="#373E40">
         <Label Text="Калькулятор индекса массы тела" 
-             VerticalTextAlignment="Start" 
+             VerticalTextAlignment="Start" HorizontalTextAlignment="Center" 
             FontSize="Title" FontFamily="Arial" TextColor="#FFFFFF" 
-            Margin="0,0,0,0" />
+            Margin="0,10,0,0" />
 
-        <Entry x:Name="heightEn" Placeholder="Введите свой рост" Margin="0,50,0,0" FontSize="20" Keyboard="Numeric"/>
+        <Entry x:Name="heightEn" Placeholder="Введите свой рост" Margin="0,10,0,0" FontSize="20" Keyboard="Numeric"/>
         <Entry x:Name="weightEn" Placeholder="Введите свой вес" Margin="0,10,0,0" FontSize="20" Keyboard="Numeric"/>
         <Button x:Name="okBtn" Clicked="OnButtonClicked" Text="Рассчитать" CornerRadius="10" BorderWidth="1" TextColor="#FFFFFF" FontSize="17" HorizontalOptions="Center" Margin="0,20,0,0"/>
-        <Label x:Name="imt" FontAttributes="Bold" Text="" HorizontalTextAlignment="Center" IsVisible="false" FontSize="20" Margin="0,10,0,0"/>
-        <microcharts:ChartView x:Name="imtChart" HeightRequest="150" BackgroundColor="#EEEBD0" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" IsVisible="false"/>
+        <Label x:Name="imt" FontAttributes="Bold" Text="" HorizontalTextAlignment="Center" IsVisible="false" FontSize="20" Margin="0,0,0,0"/>
+        <microcharts:ChartView x:Name="imtChart" HeightRequest="150" BackgroundColor="#373E40" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" IsVisible="false" Margin="0,20,0,0"/>
 
     </StackLayout>
 
